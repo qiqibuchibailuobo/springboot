@@ -1,0 +1,727 @@
+2019-10-24 16:01:25.793  INFO 1964 --- [restartedMain] c.yq.springboot1.Springboot1Application  : Starting Springboot1Application on YQ with PID 1964 (C:\Users\Yq\Desktop\springboot1\target\classes started by Yq in C:\Users\Yq\Desktop\springboot1)
+2019-10-24 16:01:25.805  INFO 1964 --- [restartedMain] c.yq.springboot1.Springboot1Application  : No active profile set, falling back to default profiles: default
+2019-10-24 16:01:25.915  INFO 1964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-24 16:01:25.916  INFO 1964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-24 16:01:28.479  INFO 1964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7777 (http)
+2019-10-24 16:01:28.529  INFO 1964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-24 16:01:28.530  INFO 1964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-10-24 16:01:28.768  INFO 1964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-24 16:01:28.768  INFO 1964 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2851 ms
+2019-10-24 16:01:30.694  INFO 1964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-24 16:01:30.766  INFO 1964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7777 (http) with context path ''
+2019-10-24 16:01:30.771  INFO 1964 --- [restartedMain] c.yq.springboot1.Springboot1Application  : Started Springboot1Application in 5.624 seconds (JVM running for 8.999)
+2019-10-24 16:01:36.758  INFO 1964 --- [http-nio-7777-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-24 16:01:36.758  INFO 1964 --- [http-nio-7777-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-24 16:01:36.773  INFO 1964 --- [http-nio-7777-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-10-24 16:01:36.908  INFO 1964 --- [http-nio-7777-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-24 16:01:37.354  INFO 1964 --- [http-nio-7777-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-24 16:01:37.380 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2019-10-24 16:01:37.419 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-10-24 16:01:37.451 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:01:37.465 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2019-10-24 16:01:37.470 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-24 16:01:37.491 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:01:37.493 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:37.495 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:37.500 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:37.520 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:37.524 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:37.524 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:37.524 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:37.524 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:37.524 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:37.528 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:37.529 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:37.531 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:37.532 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:37.532 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:37.533 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:45.595 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:01:45.598 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:01:45.608 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:01:45.608 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:01:45.608 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 10(Integer), 5(Integer)
+2019-10-24 16:01:45.613 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:01:45.613 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:45.613 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:45.617 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:45.617 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:45.617 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:45.621 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:45.621 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:45.622 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:45.623 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:45.624 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:45.624 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:45.627 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:45.627 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:45.627 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:45.628 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:45.991 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:01:45.992 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:01:45.995 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:01:45.997 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:01:45.998 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 15(Integer), 5(Integer)
+2019-10-24 16:01:45.998 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:01:46.004 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:46.004 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:46.004 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:46.004 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:46.004 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:46.004 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:46.004 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:46.004 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:46.008 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:46.008 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:46.008 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:46.008 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:46.010 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:46.010 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:46.011 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:46.297 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:01:46.299 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:01:46.301 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:01:46.302 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:01:46.303 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 20(Integer), 5(Integer)
+2019-10-24 16:01:46.311 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.Q.selectBySearch                 : <==      Total: 1
+2019-10-24 16:01:46.312 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:46.312 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:46.316 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:47.674 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:01:47.675 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:01:47.676 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:01:47.678 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:01:47.679 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 0(Integer), 5(Integer)
+2019-10-24 16:01:47.683 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:01:47.684 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:47.684 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:47.684 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:47.689 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:47.689 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:47.689 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:47.690 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:47.690 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:47.690 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:47.690 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:47.690 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:47.690 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:01:47.690 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:01:47.690 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:01:47.690 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:14.475 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2019-10-24 16:02:14.477 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-10-24 16:02:14.477 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:02:14.479 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2019-10-24 16:02:14.479 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-24 16:02:14.484 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:02:14.484 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:14.484 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:14.485 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:14.486 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:14.486 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:14.488 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:14.488 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:14.488 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:14.489 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:14.489 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:14.489 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:14.489 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:14.489 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:14.489 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:14.489 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:15.905 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.Q.selectByPrimaryKey             : ==>  Preparing: select ID, TITLE, GMT_CREATE, GMT_MODIFIED, CREATOR, COMMENT_COUNT, VIEW_COUNT, LIKE_COUNT, TAG , DESCRIPTION from QUESTION where ID = ? 
+2019-10-24 16:02:15.906 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.Q.selectByPrimaryKey             : ==> Parameters: 367(Long)
+2019-10-24 16:02:15.906 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.Q.selectByPrimaryKey             : <==      Total: 1
+2019-10-24 16:02:15.907 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:15.907 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:15.907 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:15.907 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.QuestionExtMapper.selectRelated  : ==>  Preparing: select * from QUESTION where id != ? and tag regexp ? 
+2019-10-24 16:02:15.907 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.QuestionExtMapper.selectRelated  : ==> Parameters: 367(Long), java(String)
+2019-10-24 16:02:15.914 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.QuestionExtMapper.selectRelated  : <==      Total: 8
+2019-10-24 16:02:15.992 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.CommentMapper.selectByExample    : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
+2019-10-24 16:02:15.994 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.CommentMapper.selectByExample    : ==> Parameters: 367(Long), 1(Integer)
+2019-10-24 16:02:15.998 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.CommentMapper.selectByExample    : <==      Total: 0
+2019-10-24 16:02:15.998 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.mapper.QuestionExtMapper.incView   : ==>  Preparing: update QUESTION set VIEW_COUNT = VIEW_COUNT + ? where id = ? 
+2019-10-24 16:02:16.004 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.mapper.QuestionExtMapper.incView   : ==> Parameters: 1(Integer), 367(Long)
+2019-10-24 16:02:16.021 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.mapper.QuestionExtMapper.incView   : <==    Updates: 1
+2019-10-24 16:02:18.424 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectByPrimaryKey             : ==>  Preparing: select ID, TITLE, GMT_CREATE, GMT_MODIFIED, CREATOR, COMMENT_COUNT, VIEW_COUNT, LIKE_COUNT, TAG , DESCRIPTION from QUESTION where ID = ? 
+2019-10-24 16:02:18.424 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectByPrimaryKey             : ==> Parameters: 295(Long)
+2019-10-24 16:02:18.425 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectByPrimaryKey             : <==      Total: 1
+2019-10-24 16:02:18.425 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:18.426 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:18.426 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:18.427 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.selectRelated  : ==>  Preparing: select * from QUESTION where id != ? and tag regexp ? 
+2019-10-24 16:02:18.427 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.selectRelated  : ==> Parameters: 295(Long), h5|css|java|c#|c++|python|node.js(String)
+2019-10-24 16:02:18.430 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.selectRelated  : <==      Total: 9
+2019-10-24 16:02:18.433 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.CommentMapper.selectByExample    : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
+2019-10-24 16:02:18.433 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.CommentMapper.selectByExample    : ==> Parameters: 295(Long), 1(Integer)
+2019-10-24 16:02:18.434 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.CommentMapper.selectByExample    : <==      Total: 2
+2019-10-24 16:02:18.444 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( ID in ( ? ) ) 
+2019-10-24 16:02:18.449 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.mapper.UserMapper.selectByExample  : ==> Parameters: 261(Long)
+2019-10-24 16:02:18.450 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-10-24 16:02:18.479 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.mapper.QuestionExtMapper.incView   : ==>  Preparing: update QUESTION set VIEW_COUNT = VIEW_COUNT + ? where id = ? 
+2019-10-24 16:02:18.481 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.mapper.QuestionExtMapper.incView   : ==> Parameters: 1(Integer), 295(Long)
+2019-10-24 16:02:18.484 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.mapper.QuestionExtMapper.incView   : <==    Updates: 1
+2019-10-24 16:02:19.063 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.Q.selectByPrimaryKey             : ==>  Preparing: select ID, TITLE, GMT_CREATE, GMT_MODIFIED, CREATOR, COMMENT_COUNT, VIEW_COUNT, LIKE_COUNT, TAG , DESCRIPTION from QUESTION where ID = ? 
+2019-10-24 16:02:19.063 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.Q.selectByPrimaryKey             : ==> Parameters: 297(Long)
+2019-10-24 16:02:19.064 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.Q.selectByPrimaryKey             : <==      Total: 1
+2019-10-24 16:02:19.065 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:19.065 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:19.065 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:19.066 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.QuestionExtMapper.selectRelated  : ==>  Preparing: select * from QUESTION where id != ? and tag regexp ? 
+2019-10-24 16:02:19.067 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.QuestionExtMapper.selectRelated  : ==> Parameters: 297(Long), java(String)
+2019-10-24 16:02:19.070 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.QuestionExtMapper.selectRelated  : <==      Total: 8
+2019-10-24 16:02:19.071 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.CommentMapper.selectByExample    : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
+2019-10-24 16:02:19.071 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.CommentMapper.selectByExample    : ==> Parameters: 297(Long), 1(Integer)
+2019-10-24 16:02:19.090 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.CommentMapper.selectByExample    : <==      Total: 1
+2019-10-24 16:02:19.096 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( ID in ( ? ) ) 
+2019-10-24 16:02:19.096 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.mapper.UserMapper.selectByExample  : ==> Parameters: 261(Long)
+2019-10-24 16:02:19.097 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-10-24 16:02:19.098 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.mapper.QuestionExtMapper.incView   : ==>  Preparing: update QUESTION set VIEW_COUNT = VIEW_COUNT + ? where id = ? 
+2019-10-24 16:02:19.098 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.mapper.QuestionExtMapper.incView   : ==> Parameters: 1(Integer), 297(Long)
+2019-10-24 16:02:19.100 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.mapper.QuestionExtMapper.incView   : <==    Updates: 1
+2019-10-24 16:02:19.678 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.Q.selectByPrimaryKey             : ==>  Preparing: select ID, TITLE, GMT_CREATE, GMT_MODIFIED, CREATOR, COMMENT_COUNT, VIEW_COUNT, LIKE_COUNT, TAG , DESCRIPTION from QUESTION where ID = ? 
+2019-10-24 16:02:19.678 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.Q.selectByPrimaryKey             : ==> Parameters: 364(Long)
+2019-10-24 16:02:19.684 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.Q.selectByPrimaryKey             : <==      Total: 1
+2019-10-24 16:02:19.686 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:19.686 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:19.687 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:19.688 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.QuestionExtMapper.selectRelated  : ==>  Preparing: select * from QUESTION where id != ? and tag regexp ? 
+2019-10-24 16:02:19.688 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.QuestionExtMapper.selectRelated  : ==> Parameters: 364(Long), java(String)
+2019-10-24 16:02:19.692 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.QuestionExtMapper.selectRelated  : <==      Total: 8
+2019-10-24 16:02:19.697 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.CommentMapper.selectByExample    : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
+2019-10-24 16:02:19.697 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.CommentMapper.selectByExample    : ==> Parameters: 364(Long), 1(Integer)
+2019-10-24 16:02:19.697 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.CommentMapper.selectByExample    : <==      Total: 0
+2019-10-24 16:02:19.702 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.mapper.QuestionExtMapper.incView   : ==>  Preparing: update QUESTION set VIEW_COUNT = VIEW_COUNT + ? where id = ? 
+2019-10-24 16:02:19.702 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.mapper.QuestionExtMapper.incView   : ==> Parameters: 1(Integer), 364(Long)
+2019-10-24 16:02:19.703 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.mapper.QuestionExtMapper.incView   : <==    Updates: 1
+2019-10-24 16:02:20.470 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.Q.selectByPrimaryKey             : ==>  Preparing: select ID, TITLE, GMT_CREATE, GMT_MODIFIED, CREATOR, COMMENT_COUNT, VIEW_COUNT, LIKE_COUNT, TAG , DESCRIPTION from QUESTION where ID = ? 
+2019-10-24 16:02:20.470 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.Q.selectByPrimaryKey             : ==> Parameters: 361(Long)
+2019-10-24 16:02:20.470 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.Q.selectByPrimaryKey             : <==      Total: 1
+2019-10-24 16:02:20.470 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:20.471 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:20.471 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:20.471 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.QuestionExtMapper.selectRelated  : ==>  Preparing: select * from QUESTION where id != ? and tag regexp ? 
+2019-10-24 16:02:20.472 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.QuestionExtMapper.selectRelated  : ==> Parameters: 361(Long), java(String)
+2019-10-24 16:02:20.476 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.QuestionExtMapper.selectRelated  : <==      Total: 8
+2019-10-24 16:02:20.478 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.CommentMapper.selectByExample    : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
+2019-10-24 16:02:20.478 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.CommentMapper.selectByExample    : ==> Parameters: 361(Long), 1(Integer)
+2019-10-24 16:02:20.479 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.CommentMapper.selectByExample    : <==      Total: 0
+2019-10-24 16:02:20.479 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.mapper.QuestionExtMapper.incView   : ==>  Preparing: update QUESTION set VIEW_COUNT = VIEW_COUNT + ? where id = ? 
+2019-10-24 16:02:20.479 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.mapper.QuestionExtMapper.incView   : ==> Parameters: 1(Integer), 361(Long)
+2019-10-24 16:02:20.480 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.mapper.QuestionExtMapper.incView   : <==    Updates: 1
+2019-10-24 16:02:21.069 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.Q.selectByPrimaryKey             : ==>  Preparing: select ID, TITLE, GMT_CREATE, GMT_MODIFIED, CREATOR, COMMENT_COUNT, VIEW_COUNT, LIKE_COUNT, TAG , DESCRIPTION from QUESTION where ID = ? 
+2019-10-24 16:02:21.069 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.Q.selectByPrimaryKey             : ==> Parameters: 297(Long)
+2019-10-24 16:02:21.070 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.Q.selectByPrimaryKey             : <==      Total: 1
+2019-10-24 16:02:21.071 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:21.071 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:21.071 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:21.073 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.QuestionExtMapper.selectRelated  : ==>  Preparing: select * from QUESTION where id != ? and tag regexp ? 
+2019-10-24 16:02:21.073 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.QuestionExtMapper.selectRelated  : ==> Parameters: 297(Long), java(String)
+2019-10-24 16:02:21.075 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.QuestionExtMapper.selectRelated  : <==      Total: 8
+2019-10-24 16:02:21.076 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.CommentMapper.selectByExample    : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
+2019-10-24 16:02:21.076 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.CommentMapper.selectByExample    : ==> Parameters: 297(Long), 1(Integer)
+2019-10-24 16:02:21.077 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.CommentMapper.selectByExample    : <==      Total: 1
+2019-10-24 16:02:21.078 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( ID in ( ? ) ) 
+2019-10-24 16:02:21.079 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.mapper.UserMapper.selectByExample  : ==> Parameters: 261(Long)
+2019-10-24 16:02:21.079 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-10-24 16:02:21.080 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.mapper.QuestionExtMapper.incView   : ==>  Preparing: update QUESTION set VIEW_COUNT = VIEW_COUNT + ? where id = ? 
+2019-10-24 16:02:21.080 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.mapper.QuestionExtMapper.incView   : ==> Parameters: 1(Integer), 297(Long)
+2019-10-24 16:02:21.081 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.mapper.QuestionExtMapper.incView   : <==    Updates: 1
+2019-10-24 16:02:35.934 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.CommentMapper.selectByExample    : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
+2019-10-24 16:02:35.934 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.CommentMapper.selectByExample    : ==> Parameters: 947(Long), 2(Integer)
+2019-10-24 16:02:35.934 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.CommentMapper.selectByExample    : <==      Total: 0
+2019-10-24 16:02:40.357 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.CommentMapper.selectByExample    : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
+2019-10-24 16:02:40.357 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.CommentMapper.selectByExample    : ==> Parameters: 947(Long), 2(Integer)
+2019-10-24 16:02:40.357 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.CommentMapper.selectByExample    : <==      Total: 0
+2019-10-24 16:02:43.721 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2019-10-24 16:02:43.722 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-10-24 16:02:43.722 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:02:43.723 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2019-10-24 16:02:43.723 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-24 16:02:43.727 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:02:43.728 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:43.729 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:43.729 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:43.730 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:43.730 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:43.730 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:43.730 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:43.731 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:43.731 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:43.732 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:43.732 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:43.732 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:43.733 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:43.733 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:43.734 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:45.837 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:02:45.838 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: java(String)
+2019-10-24 16:02:45.839 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:02:45.840 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:02:45.842 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.Q.selectBySearch                 : ==> Parameters: java(String), 0(Integer), 5(Integer)
+2019-10-24 16:02:45.844 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:02:45.845 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:45.845 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:45.846 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:45.846 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:45.846 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:45.846 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:45.846 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:45.846 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:45.846 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:45.846 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:45.846 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:45.846 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:45.846 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:45.846 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:45.846 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:49.806 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:02:49.807 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: java(String)
+2019-10-24 16:02:49.808 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:02:49.810 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:02:49.810 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.Q.selectBySearch                 : ==> Parameters: java(String), 5(Integer), 5(Integer)
+2019-10-24 16:02:49.811 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.Q.selectBySearch                 : <==      Total: 2
+2019-10-24 16:02:49.812 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:49.812 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:49.813 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:49.814 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:49.814 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:49.815 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:53.325 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:02:53.326 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: spring(String)
+2019-10-24 16:02:53.327 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:02:53.327 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:02:53.327 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : ==> Parameters: spring(String), 0(Integer), 5(Integer)
+2019-10-24 16:02:53.328 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : <==      Total: 2
+2019-10-24 16:02:53.329 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:53.329 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:53.330 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:02:53.330 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:02:53.331 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:02:53.331 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:03:58.191 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2019-10-24 16:03:58.192 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-10-24 16:03:58.193 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:03:58.194 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2019-10-24 16:03:58.195 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-24 16:03:58.198 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:03:58.199 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:03:58.199 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:03:58.199 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:03:58.200 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:03:58.200 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:03:58.203 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:03:58.203 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:03:58.203 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:03:58.204 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:03:58.204 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:03:58.204 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:03:58.204 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:03:58.205 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:03:58.205 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:03:58.206 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:00.982 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:00.982 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:00.983 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:00.984 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:00.985 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 20(Integer), 5(Integer)
+2019-10-24 16:04:00.986 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.Q.selectBySearch                 : <==      Total: 1
+2019-10-24 16:04:00.987 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:00.988 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:00.988 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:02.210 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:02.211 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:02.212 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:02.212 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:02.212 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 0(Integer), 5(Integer)
+2019-10-24 16:04:02.214 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:02.214 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:02.215 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:02.215 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:02.216 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:02.216 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:02.216 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:02.216 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:02.217 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:02.217 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:02.218 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:02.218 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:02.218 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:02.218 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:02.218 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:02.218 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:03.301 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:03.302 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:03.302 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:03.303 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:03.304 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 5(Integer), 5(Integer)
+2019-10-24 16:04:03.306 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:03.306 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:03.307 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:03.309 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:03.310 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:03.310 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:03.311 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:03.311 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:03.312 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:03.312 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:03.312 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:03.313 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:03.313 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:03.313 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:03.313 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:03.313 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:03.824 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:03.825 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:03.825 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:03.826 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:03.826 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 15(Integer), 5(Integer)
+2019-10-24 16:04:03.830 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:03.831 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:03.831 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:03.831 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:03.831 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:03.832 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:03.833 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:03.833 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:03.833 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:03.833 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:03.833 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:03.833 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:03.833 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:03.833 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:03.833 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:03.833 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.126 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:04.126 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:04.128 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:04.129 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:04.130 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 15(Integer), 5(Integer)
+2019-10-24 16:04:04.132 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:04.132 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.133 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.133 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.133 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.134 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.134 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.134 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.134 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.134 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.134 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.134 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.134 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.134 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.134 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.139 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.349 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:04.349 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:04.351 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:04.352 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:04.352 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 15(Integer), 5(Integer)
+2019-10-24 16:04:04.354 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:04.354 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.354 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.354 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.354 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.354 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.354 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.356 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.356 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.356 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.357 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.357 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.357 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.358 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.358 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.358 DEBUG 1964 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.644 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:04.644 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:04.645 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:04.646 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:04.646 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 15(Integer), 5(Integer)
+2019-10-24 16:04:04.649 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:04.649 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.650 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.650 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.650 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.650 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.650 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.650 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.650 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.654 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.654 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.654 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.656 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.656 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.656 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.657 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.929 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:04.930 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:04.931 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:04.931 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:04.932 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 10(Integer), 5(Integer)
+2019-10-24 16:04:04.934 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:04.934 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.934 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.935 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.936 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.936 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.936 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.936 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.936 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.937 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.937 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.937 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.938 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:04.938 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:04.938 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:04.938 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.122 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:05.122 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:05.123 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:05.124 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:05.124 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 5(Integer), 5(Integer)
+2019-10-24 16:04:05.127 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:05.127 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.127 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.128 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.128 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.129 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.129 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.129 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.130 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.130 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.131 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.131 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.131 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.131 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.131 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.131 DEBUG 1964 --- [http-nio-7777-exec-2] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.520 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:05.520 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:05.521 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:05.521 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:05.521 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 5(Integer), 5(Integer)
+2019-10-24 16:04:05.521 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:05.521 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.523 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.523 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.523 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.523 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.524 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.524 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.525 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.526 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.526 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.526 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.527 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.528 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.529 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.529 DEBUG 1964 --- [http-nio-7777-exec-10] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.777 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:05.777 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:05.779 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:05.780 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:05.780 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 5(Integer), 5(Integer)
+2019-10-24 16:04:05.783 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:05.783 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.783 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.784 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.785 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.785 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.786 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.794 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.795 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.797 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.798 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.798 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.799 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:05.800 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:05.800 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:05.801 DEBUG 1964 --- [http-nio-7777-exec-3] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:06.173 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:06.173 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:06.174 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:06.174 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:06.174 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 5(Integer), 5(Integer)
+2019-10-24 16:04:06.174 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:06.174 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:06.174 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:06.174 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:06.174 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:06.178 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:06.178 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:06.178 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:06.178 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:06.179 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:06.179 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:06.179 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:06.179 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:06.179 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:06.181 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:06.181 DEBUG 1964 --- [http-nio-7777-exec-7] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:06.436 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:06.436 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:06.436 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:06.439 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:06.440 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 0(Integer), 5(Integer)
+2019-10-24 16:04:06.442 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:06.442 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:06.442 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:06.442 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:06.442 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:06.444 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:06.444 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:06.445 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:06.446 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:06.446 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:06.446 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:06.446 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:06.446 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:06.446 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:06.449 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:06.449 DEBUG 1964 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:07.372 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:07.372 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:07.372 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:07.374 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:07.374 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 5(Integer), 5(Integer)
+2019-10-24 16:04:07.375 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:07.376 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:07.376 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:07.376 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:07.378 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:07.378 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:07.379 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:07.379 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:07.379 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:07.379 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:07.379 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:07.380 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:07.380 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:07.380 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:07.380 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:07.380 DEBUG 1964 --- [http-nio-7777-exec-6] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:07.608 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:07.608 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:07.609 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:07.610 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:07.611 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 10(Integer), 5(Integer)
+2019-10-24 16:04:07.613 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:07.614 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:07.614 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:07.614 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:07.615 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:07.615 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:07.615 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:07.616 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:07.616 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:07.616 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:07.616 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:07.616 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:07.617 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:07.617 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:07.617 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:07.617 DEBUG 1964 --- [http-nio-7777-exec-5] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:08.751 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:08.751 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:08.752 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:08.752 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:08.753 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 5(Integer), 5(Integer)
+2019-10-24 16:04:08.755 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:08.756 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:08.757 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:08.758 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:08.759 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:08.760 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:08.760 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:08.760 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:08.760 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:08.761 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:08.761 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:08.761 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:08.761 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:08.762 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:08.762 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:08.762 DEBUG 1964 --- [http-nio-7777-exec-9] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:09.511 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2019-10-24 16:04:09.511 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: (String)
+2019-10-24 16:04:09.512 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:04:09.513 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2019-10-24 16:04:09.514 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.Q.selectBySearch                 : ==> Parameters: (String), 0(Integer), 5(Integer)
+2019-10-24 16:04:09.515 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:04:09.516 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:09.516 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:09.516 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:09.517 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:09.517 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:09.517 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:09.518 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:09.518 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:09.518 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:09.518 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:09.518 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:09.519 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:04:09.519 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:04:09.519 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:04:09.519 DEBUG 1964 --- [http-nio-7777-exec-8] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:28:29.606  INFO 8644 --- [restartedMain] c.yq.springboot1.Springboot1Application  : Starting Springboot1Application on YQ with PID 8644 (C:\Users\Yq\Desktop\springboot1\target\classes started by Yq in C:\Users\Yq\Desktop\springboot1)
+2019-10-24 16:28:29.645  INFO 8644 --- [restartedMain] c.yq.springboot1.Springboot1Application  : No active profile set, falling back to default profiles: default
+2019-10-24 16:28:29.798  INFO 8644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-24 16:28:29.799  INFO 8644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-24 16:28:34.043  INFO 8644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7777 (http)
+2019-10-24 16:28:34.090  INFO 8644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-24 16:28:34.090  INFO 8644 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-10-24 16:28:34.831  INFO 8644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-24 16:28:34.833  INFO 8644 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5034 ms
+2019-10-24 16:28:38.146  INFO 8644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-24 16:28:38.242  INFO 8644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7777 (http) with context path ''
+2019-10-24 16:28:38.250  INFO 8644 --- [restartedMain] c.yq.springboot1.Springboot1Application  : Started Springboot1Application in 9.495 seconds (JVM running for 11.807)
+2019-10-24 16:32:15.702  INFO 8644 --- [http-nio-7777-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-24 16:32:15.703  INFO 8644 --- [http-nio-7777-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-24 16:32:15.714  INFO 8644 --- [http-nio-7777-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-10-24 16:32:15.798  INFO 8644 --- [http-nio-7777-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-24 16:32:16.023  INFO 8644 --- [http-nio-7777-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-24 16:32:16.032 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2019-10-24 16:32:16.054 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-10-24 16:32:16.075 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:32:16.081 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2019-10-24 16:32:16.084 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-24 16:32:16.093 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:32:16.094 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:32:16.097 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:32:16.098 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:32:16.110 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:32:16.111 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:32:16.112 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:32:16.112 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:32:16.112 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:32:16.113 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:32:16.114 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:32:16.114 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:32:16.116 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:32:16.116 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:32:16.116 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:32:16.117 DEBUG 8644 --- [http-nio-7777-exec-1] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:33:20.502 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2019-10-24 16:33:20.503 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-10-24 16:33:20.504 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-10-24 16:33:20.505 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2019-10-24 16:33:20.506 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-24 16:33:20.510 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.Q.selectBySearch                 : <==      Total: 5
+2019-10-24 16:33:20.511 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:33:20.511 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:33:20.512 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:33:20.512 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:33:20.513 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:33:20.514 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:33:20.515 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:33:20.515 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:33:20.516 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:33:20.517 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:33:20.517 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:33:20.518 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-10-24 16:33:20.520 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-10-24 16:33:20.520 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 261(Long)
+2019-10-24 16:33:20.521 DEBUG 8644 --- [http-nio-7777-exec-4] c.y.s.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
